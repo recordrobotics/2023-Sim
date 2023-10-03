@@ -61,21 +61,6 @@ public class Robot extends TimedRobot {
 	}
 
 	/**
-	 * Runs when robot enters auto mode
-	 */
-	@Override
-	public void autonomousInit() {
-		System.out.println("Autonomous Init");
-		_autonomousCommand = _robotContainer.getAutonomousCommand();
-
-
-		// schedule the autonomous command (example)
-		if (_autonomousCommand != null) {
-			_autonomousCommand.schedule();
-		}
-	}
-
-	/**
 	 * Runs every tick during auto mode
 	 */
 	@Override
